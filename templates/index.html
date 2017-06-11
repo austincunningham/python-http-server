@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+    <link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Hello World</title>
+</head>
+<body>
+    <section class="ui stacked segment">
+         <section class="ui stacked segment">
+         <H1 class="ui header">Hello World</H1>
+             <aside class="ui six wide column">
+               <img src="{{ url_for('static', filename='flask.png') }}" class="ui medium image">
+             </aside>
+             <div>
+                <a href="/loginView">
+                    <button class="massive green ui button">
+                        Login
+                    </button>
+                </a>
+             </div>
+         </section>
+    </section>
+</body>
+</html>
